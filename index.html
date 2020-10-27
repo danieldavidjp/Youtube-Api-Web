@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<script src="app.js"></script>
+<html>
+  <head>
+    <title>Video Quiz</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <meta http-equiv=”Content-Type” content=”text/html; charset=UTF-8″ />  </head>
+  <body>
+      <br>
+      <h1>Video Quiz</h1><br>
+    <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+    <div id="playerDiv"><div id="player"></div></div>
+    <div class="centered">
+        <p id="p1">En un momento determinado el video será detenido y una pregunta saldra, cuando sea respondida correctamente, el video continuará</p>
+        <button id="button1" onclick="iniciarQuiz()">Iniciar</button>
+    </div>
+    <div id= "pregunta" style="display: none;" class="centered">
+        <p id = "preguntas">Esto es una pregunta</p>
+        <form>
+            <input type="radio" id="res" name="respuestas" value="res1">
+            <label for="res1">Male</label><br>
+            <input type="radio" id="res" name="respuestas" value="res2">
+            <label for="res2">Female</label><br>
+            <input type="radio" id="res" name="respuestas" value="res3">
+            <label for="res3">Other</label>
+          </form><br>
+          <button id="submitbutton" onclick="submitAnswer()">Verificar</button>
+          
+    </div>
+    <p id="resultado" style="display: none;"></p>
+
+  </body>
+</html>
